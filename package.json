@@ -1,0 +1,18 @@
+{
+  "name": "object-replace-recursive",
+  "version": "0.0.1",
+  "description": "This function can replace some parameter of one object based on a given second object",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {}
+}
