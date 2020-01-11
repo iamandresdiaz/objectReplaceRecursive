@@ -9,8 +9,12 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "iamandresdiaz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamandresdiaz/object-replace-recursive.git"
+  },
   "devDependencies": {
     "jest": "^24.9.0"
   },
