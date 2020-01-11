@@ -7,3 +7,9 @@ JavaScript Object Replace Recursive [npm](https://www.npmjs.com/package/object-r
 ```
 $ npm i object-replace-recursive
 ```
+
+### Use
+
+```
+const objectReplaceRecursive = require('object-replace-recursive')
+```
