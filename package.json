@@ -1,13 +1,19 @@
 {
   "name": "object-replace-recursive",
-  "version": "0.0.1",
-  "description": "This function can replace some parameter of one object based on a given second object",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "version": "1.0.0",
+  "description": "An object replace recursive project",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublish": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "author": "iamandresdiaz",
   "license": "MIT",
@@ -15,8 +21,26 @@
     "type": "git",
     "url": "https://github.com/iamandresdiaz/object-replace-recursive.git"
   },
+  "keywords": [
+    "Object",
+    "Replace",
+    "Recursive"
+  ],
+  "bugs": {
+    "url": "https://github.com/iamandresdiaz/object-replace-recursive/issues"
+  },
+  "homepage": "https://github.com/iamandresdiaz/object-replace-recursive/blob/master/README.md",
+  "files": [
+    "lib/**/*"
+  ],
   "devDependencies": {
-    "jest": "^24.9.0"
+    "@types/jest": "^24.0.25",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.4"
   },
   "dependencies": {}
 }
