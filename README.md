@@ -11,5 +11,5 @@ $ npm i object-replace-recursive
 ### Use
 
 ```
-const objectReplaceRecursive = require('object-replace-recursive')
+import { ObjectReplaceRecursive } from 'object-replace-recursive';
 ```
